@@ -1,4 +1,4 @@
-# Refactor For Accessibility
+# Professional Portfolio
 
 ## Description
 
@@ -15,7 +15,7 @@ This is a description.
 
 ![]()
 
-*(Homework project #n for the UC Berkeley Full-Stack Developer Bootcamp)*
+*(Homework project #2 for the UC Berkeley Full-Stack Developer Bootcamp)*
 
 ## Prerequisites
 Any modern internet browser will do!
