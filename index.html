@@ -5,47 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./meyerreset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="icon_path" sizes="16x16" alt="Icon">
     <link rel="icon" type="image/png" href="icon_path" sizes="32x32" alt="Icon">
 </head>
 
 <header>
-    <h1>Alex Gibson</h1>
-    <p>Full Stack Developer In-Training</p>
+    <div>
+        <h1>Alex Gibson</h1>
+        <p>Full Stack Developer In-Training</p>
+    </div>
 </header>
 
-<nav>
-    <ul>
-        <li>
-            <a href="#description">About Me</a>
-        </li>
-        <li>
-            <a href="#featured">Featured Works</a>
-        </li>
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-        <li>
-            <a href="#contact">Contact Me</a>
-        </li>
-    </ul>
-</nav>
+<div class="navbar">
+    <nav>
+        <ul>
+            <li>
+                <a href="#description">About Me</a>
+            </li>
+            <li>
+                <a href="#featured">Featured Works</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 <body>
     <main class="about-me">
-        <div id="headshot">
-            <!-- headshot -->
-            <img src="./images/AlexGibson.jpeg" alt="Professional headshot of me, Alex Gibson. Thank you for reading this alt text! :)">
-        </div>
-        <article id="description">
-            <!-- description -->
-            <p>Guavas originated from an area thought to extend from Mexico, Central America or northern South America throughout the Caribbean region.245 Archaeological sites in Peru yielded evidence of guava cultivation as early as 2500 BC.5
+        <h3>About me</h3>
+        <div class="headanddesc">
+             <div id="headshot">
+                <img src="./images/AlexGibson.jpeg" alt="Professional headshot of me, Alex Gibson. Thank you for reading this alt text! :)">
+            </div>
+            <article id="description">
+                <p>Guavas originated from an area thought to extend from Mexico, Central America or northern South America throughout the Caribbean region.245 Archaeological sites in Peru yielded evidence of guava cultivation as early as 2500 BC.5
 
-                Guava was adopted as a crop in subtropical and tropical Asia, parts of the United States (from Tennessee and North Carolina, southward, as well as the west and Hawaii), tropical Africa, South Asia, Southeast Asia, and Oceania.4 Guavas were introduced to Florida, US in the 19th century2 and are grown there as far north as Sarasota, Chipley, Waldo and Fort Pierce. However, they are a primary host of the Caribbean fruit fly and must be protected against infestation in areas of Florida where this pest is present.6
+                   Guava was adopted as a crop in subtropical and tropical Asia, parts of the United States (from Tennessee and North Carolina, southward, as well as the west and Hawaii), tropical Africa, South Asia, Southeast Asia, and Oceania.4 Guavas were introduced to Florida, US in the 19th century2 and are grown there as far north as Sarasota, Chipley, Waldo and Fort Pierce. However, they are a primary host of the Caribbean fruit fly and must be protected against infestation in areas of Florida where this pest is present.6
                 
-                Guavas are cultivated in many tropical and subtropical countries.24 Several species are grown commercially; apple guava and its cultivars are those most commonly traded internationally.2 Guavas also grow in southwestern Europe, specifically the Costa del Sol on Málaga, (Spain) and Greece where guavas have been commercially grown since the middle of the 20th century and they proliferate as cultivars.4 Mature trees of most species are fairly cold-hardy and can survive temperatures slightly colder than −4 °C (25 °F) for short periods of time, but younger plants will likely freeze to the ground.7
-        </article>
+                    Guavas are cultivated in many tropical and subtropical countries.24 Several species are grown commercially; apple guava and its cultivars are those most commonly traded internationally.2 Guavas also grow in southwestern Europe, specifically the Costa del Sol on Málaga, (Spain) and Greece where guavas have been commercially grown since the middle of the 20th century and they proliferate as cultivars.4 Mature trees of most species are fairly cold-hardy and can survive temperatures slightly colder than −4 °C (25 °F) for short periods of time, but younger plants will likely freeze to the ground.7
+            </article>
+        </div>
     </main>
     <section id="featured" class="macroCard1">
         <h3>Featured</h3>
@@ -58,7 +64,6 @@
     <section id="projects">
         <div class="macroCard2">
             <h3>Projects</h3>
-            <!-- other projects section -->
             <div class="projectCard2">
                 <img src="./images/temp-300x200.png" alt="Project #1">
             </div>
@@ -74,9 +79,9 @@
         </div>
     </section>
 </body>
+
 <footer>
     <section id="contact">
-        <!-- footer with contact ? -->
         <p>footer filler</p>
     </section>
 </footer>
