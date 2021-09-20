@@ -11,7 +11,6 @@
     font-size: 16px;
     margin: 0px;
     padding: 0px;
-    color: black;
     font-family: Helvetica;
 }
 
@@ -92,8 +91,8 @@ ul > li {
 
 ul > li:hover {
     background-color: rgb(90, 89, 89);
-
-
+    box-shadow: 1px 1px black;
+    transform: scale(1.05);
 }
 
 a {
@@ -104,7 +103,7 @@ body {
     height: 100%;
     margin: 0px;
     color: black;
-    background: linear-gradient(101deg, var(--color2) 40%, var(--color1));
+    background: linear-gradient(101deg, var(--color2) 20%, var(--color1));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -147,16 +146,13 @@ h3 {
     margin: 2rem 0px 1rem 5rem;
 }
 
-/*reorder these*/
 
+/*----------------------------------------------*/
 
-#featured {
+#featured {/*DELETE ME AT FINISH*/
     border: 5px solid pink;
 }
 
-#projects {
-    border: 5px solid green;
-}
 
 .macroCard1 {
     display: flex;
@@ -164,7 +160,7 @@ h3 {
     border: 5px solid pink;
 }
 
-.projectCard1 {
+.featuredCard1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -178,12 +174,58 @@ h4 {
     justify-content: flex-end;
 }
 
+.featuredimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 500px;
+    width: 750px;
+    font-size: 38px;
+    border-radius: 30px;
+    transition: ease-in-out .2s;
+    box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
+    text-shadow: 6px 7px 8px black, 0 0 4px Black;
+}
+
+.featuredCard1 a {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    height: 500px;
+    width: 750px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+}
+
+.featuredimg:hover {
+    box-shadow: 30px -15px rgb(4, 165, 165);
+    transform: scale(1.005);
+    text-shadow: none;
+}
+
+.featuredimg a:hover {
+    color: transparent;
+}
+
+#project5 a {
+    background-image: url(./images/refactor-for-accessibility.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------------------------*/
+#projects {  /*DELETE ME AT FINISH*/
+    border: 5px solid green;
+}
+
 .macrocard2 {
     display: flex;
     justify-content: center;
-    
-    /*align-items: center;*/
 }
+
 
 .projectCard2 {
     display: flex;
@@ -195,27 +237,6 @@ h4 {
 
 }
 
-.featuredimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    height: 500px;
-    width: 750px;
-    font-size: 38px;
-    border-radius: 30px;
-    transition: ease-in-out .25s;
-    text-align: center;
-    box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
-}
-
-.featuredimg:hover {
-    box-shadow: 30px -15px rgb(4, 165, 165);
-    transform: translateX(5px), translateY(5px); /*under work*/
-
-}
-
-
 .projectimg {
     display: flex;
     justify-content: center;
@@ -223,46 +244,35 @@ h4 {
     margin: 30px;
     height: 400px;
     width: 450px;
-    font-size: 34px;
+    font-size: 38px;
     border-radius: 30px;
-    transition: ease-in-out .25s;
+    transition: ease-in-out .2s;
     box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
-}
-
-.projectimg:hover {
-    box-shadow: 30px -15px rgb(133, 60, 175);
-}
-
-
-.projectCard1 a {
-    color: white;
-    text-shadow: 2px 3px 4px 4px black;
-    height: 500px;
-    width: 750px;
-    border-radius: 30px;
+    text-shadow: 6px 7px 8px black, 0 0 2px Black;
 }
 
 .projectCard2 a {
-    color: white;
-    text-shadow: 2px 3px 4px black;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
     height: 400px;
     width: 450px;
     border-radius: 30px;
     text-align: center;
-
+    font-size: 56px;
+    color: white;
 }
 
-
-footer {
-    display: flex;
-    border: 5px dotted green;
+.projectimg:hover {
+    box-shadow: 30px -15px rgb(133, 60, 175);
+    transform: scale(1.005);
+    text-shadow: none;
 }
 
-
-#project5 a {
-    background-image: url(./images/refactor-for-accessibility.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.projectimg a:hover {
+    color: transparent;
 }
 
 #project1 {
@@ -288,3 +298,53 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*----------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.contactIcon {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    background-color: chartreuse;
+    transition: ease-in-out .1s;
+    margin: 15px;
+}
+
+.contactIcon:hover {
+    transform: scale(1.15);
+    box-shadow: 10px -10px rgb(133, 60, 175), -4px 5px rgb(60, 87, 175, .5);
+}
+
+#contact1 {
+    background-image: url(./images/linkedin-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+#contact2 {
+    background-image: url(./images/email-icon.png);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    background-position: center;
+}
+
+#contact3 {
+    background-image: url(./images/github-icon.png);
+    background-repeat: no-repeat;
+    background-size: 190px;
+    background-position: center;
+}
+
+
