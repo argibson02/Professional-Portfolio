@@ -17,6 +17,7 @@
 
 html {
     font-family: Helvetica;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -151,9 +152,6 @@ h3 {
 
 #featured {
     border: 5px solid pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #projects {
@@ -175,20 +173,48 @@ h3 {
     margin: 5px;
 }
 
+h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .macrocard2 {
     display: flex;
     justify-content: center;
+    
     /*align-items: center;*/
 }
 
 .projectCard2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 3px solid crimson;
     padding: 20px;
     margin: 5px;
+
 }
+
+.featuredimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 500px;
+    width: 750px;
+    font-size: 38px;
+    border-radius: 30px;
+    transition: ease-in-out .25s;
+    text-align: center;
+    box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
+}
+
+.featuredimg:hover {
+    box-shadow: 30px -15px rgb(4, 165, 165);
+    transform: translateX(5px), translateY(5px); /*under work*/
+
+}
+
 
 .projectimg {
     display: flex;
@@ -197,38 +223,68 @@ h3 {
     margin: 30px;
     height: 400px;
     width: 450px;
-    border: 2px dotted rgb(96, 96, 119);
     font-size: 34px;
     border-radius: 30px;
+    transition: ease-in-out .25s;
+    box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
 }
 
-.projectimg p {
-    display: block;
+.projectimg:hover {
+    box-shadow: 30px -15px rgb(133, 60, 175);
 }
 
-.featuredimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    height: 450px;
-    width: 700px;
-    border: 2px dotted rgb(96, 96, 119);
-    font-size: 36px;
+
+.projectCard1 a {
+    color: white;
+    text-shadow: 2px 3px 4px 4px black;
+    height: 500px;
+    width: 750px;
     border-radius: 30px;
 }
 
+.projectCard2 a {
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    height: 400px;
+    width: 450px;
+    border-radius: 30px;
+    text-align: center;
+
 }
+
 
 footer {
     display: flex;
     border: 5px dotted green;
 }
 
-#project1 {
-    background-color: darkkhaki;
-    /*background-image: url(./images/.png);*/
+
+#project5 a {
+    background-image: url(./images/refactor-for-accessibility.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+}
+
+#project1 {
+    background-image: url(./images/rufus-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project2 {
+    background-image: url(./images/wumbo-box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project3 {
+    background-image: url(./images/greek-case-converter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project4 {
+    background-image: url(./images/group-mini-project-1.png);
+    background-repeat: no-repeat;
     background-size: cover;
 }
