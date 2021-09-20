@@ -98,11 +98,9 @@ ul > li:hover {
 
 }
 
-
-I just rid of my link underlines with: 
 a {
-        text-decoration: none;
-    }
+    text-decoration: none;
+}
 
 body {
     height: 100%;
@@ -136,6 +134,7 @@ body {
     max-width: 250px;
     max-height: 250px;
     border-radius: 5%;
+    flex: 1 0 300px;
 }
 
 #description {
@@ -153,40 +152,69 @@ h3 {
 
 /*reorder these*/
 
-.macrocard1 {
-    display: flex;
-    width:100%;
-    border: 5px solid cyan;
-}
-
-.projectCard1 {
-    border: 3px solid orange;
-    padding: 20px;
-    max-height: 200px;
-    max-width: 300px;
-}
-
-.macrocard2 {
-    width:100%;
-    border: 5px solid cyan;
-}
-
-.projectCard2 {
-    border: 3px solid orange;
-    padding: 20px;
-    max-height: 200px;
-    max-width: 300px;
-}
+section
 
 #featured {
-    border: 2px solid blue;
+    border: 5px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #projects {
-    border: 2px solid purple;
+    border: 5px solid green;
+
+}
+
+.macrocard1 {
+    display: flex;
+    justify-content: center;
+    border: 5px solid green;
+}
+
+.projectCard1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid orange;
+    padding: 20px;
+}
+
+.macrocard2 {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    border: 5px solid pink;
+}
+
+.projectCard2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid crimson;
+    padding: 20px;
+    margin: 5px;
+}
+
+.projectimg {
+    margin: 15px;
+    height: 350px;
+    width: 500px;
+    padding:2rem;
+    border: 2px dotted rgb(96, 96, 119);
+}
+
+.featuredimg {
+    margin: 15px;
+    height: 450px;
+    width: 700px;
+    padding:2rem;
+    border: 2px dotted rgb(96, 96, 119);
 }
 
 footer {
     display: flex;
     border: 5px dotted green;
 }
+
+
