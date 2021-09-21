@@ -5,7 +5,7 @@
     --bauhausRed: #cc006b;
     --bauhausYellow: #fff10c;
     --bauhausBlue: #0093d3;
-    --bauhausGrey: rgb(185, 185, 185);
+    --bauhausGrey: rgb(205, 205, 205);
     --bauhausRedBlur: rgb(204, 0, 107, .75);
     --bauhausYellowBlur: rgb(255, 241, 12, .75);
     --bauhausBlueBlur: rgb(0, 147, 211, .75);
@@ -142,7 +142,7 @@ body {
 
 
 h3 {
-    font-size: 36px;
+    font-size: 34px;
     margin: 2rem 0px 1rem 5rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -371,6 +371,9 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .featuredCard1 {
+        width: 90%;
+    }
 
     .featuredCard1 a {
         width: 90%;
@@ -383,7 +386,7 @@ footer {
 
 @media screen and (max-width: 685px) {
     #project5 a {
-        font-size: 40px;
+        font-size: 80%;
     }
 
     header {
@@ -397,14 +400,30 @@ footer {
         margin-bottom: 8px;
     }
 
+    ul {
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 548px) {
-    .featuredCard1 {
+@media screen and (max-width: 550px) {
+    .projectCard2 {
         width: 90%;
-        }
+    }
+
+    .projectCard2 a {
+        width: 90%;
+        font-size: 80%;
+    }
     
-    #project5 a {
+    #project1 a, #project2 a, #project3 a, #project4 a {
         background-position: center;
-        }     
+    }     
+}
+
+@media screen and (max-width: 465px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
