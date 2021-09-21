@@ -127,6 +127,7 @@ body {
     max-height: 300px;
     border-radius: 5%;
     flex: 1 1 300px;
+    box-shadow: 15px -15px 2px var(--bauhausYellowBlur), -15px 20px 2px var(--bauhausRedBlur), 25px 8px 2px var(--bauhausBlueBlur);
 }
 
 #description {
@@ -209,7 +210,7 @@ h4 {
 }
 
 .featuredimg:hover {
-    box-shadow: -30px 30px 2px var(--bauhausBlue), 30px -30px 2px var(--bauhausYellow);
+    box-shadow: -30px 30px 2px var(--bauhausBlueBlur), 30px -30px 2px var(--bauhausYellowBlur);
     transform: scale(1.005);
     text-shadow: none;
     border: 9px solid var(--bauhausRed);
@@ -273,7 +274,7 @@ h4 {
 }
 
 .projectimg:hover {
-    box-shadow: 30px -30px 2px var(--bauhausYellow), -30px 30px 2px var(--bauhausRed);
+    box-shadow: 30px -30px 2px var(--bauhausYellowBlur), -30px 30px 2px var(--bauhausRedBlur);
     transform: scale(1.005);
     text-shadow: none;
     border: 7px solid var(--bauhausBlue);
@@ -329,6 +330,15 @@ footer {
     margin: 20px 30px 40px 30px;
 }
 
+.contactIcon a {
+    display: flex;
+    justify-content: center;  
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    color: transparent;
+}
+
 .contactIcon:hover {
     transform: scale(1.15);
     box-shadow: 12px 10px 2px var(--bauhausBlue), -12px -12px 2px var(--bauhausRedBlur);
@@ -353,4 +363,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 190px;
     background-position: center;
+    height: 170px;
+    width: 170px;
 }
