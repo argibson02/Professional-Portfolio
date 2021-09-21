@@ -1,17 +1,21 @@
 :root {
-    --color1:#E8F6EF;
-    --color2:#B8DFD8;
-    --color3: #FFE194;
-    --color4: #4C4C6D;
-    --color5: #222831;
-    --color6: #E9896A;
+
+    --bauhausWhite: white;
+    --bauhausBlack: black;
+    --bauhausRed: #cc006b;
+    --bauhausYellow: #fff10c;
+    --bauhausBlue: #0093d3;
+    --bauhausGrey: rgb(179, 179, 179);
+    --bauhausRedBlur: rgb(204, 0, 107, .75);
+    --bauhausYellowBlur: rgb(255, 241, 12, .75);
+    --bauhausBlueBlur: rgb(0, 147, 211, .75);
 }
 
 * {
     font-size: 16px;
     margin: 0px;
     padding: 0px;
-    font-family: Helvetica;
+    font-family: Helvetica; 
 }
 
 html {
@@ -20,38 +24,39 @@ html {
 }
 
 header {
-    display: flex;
-    height: 120px;
-    background-color: var(--color4);
+    display: line; /*inert*/
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    background-color: var(--bauhausBlack);
+    color: var(--bauhausWhite);
     font-family: Helvetica;
+
 }
 
 header h1 {
-    font-size: 52px;
+    font-size: 115px;
     justify-content: center;
-    border: 1px dotted blue;
-    margin: 1rem 5rem 5px 1rem ;
+    padding: 0rem 0rem 0rem 1rem ;
     font-weight: bolder;
-}
-
-header p {
-    border: 1px solid brown;
-    margin-left: 5rem;
+    font-stretch: expanded;
+    z-index: 72;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: flex-end;
+    background-color: var(--bauhausBlack);
+
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    border: 5px solid red;
-    max-width: 1000px;
     font-family: Helvetica;
+    padding: 10px;
 }
 
 ul {
@@ -59,9 +64,6 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    background-color: var(--color1);
-    max-width: 1000px;
-
 }
 
 
@@ -70,46 +72,41 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid white;
     border-radius: 5px;
-    color: black;
-    font-size: 20px;
+    font-size: 26px;
     text-decoration: none;
-    height: 50px;
-    width: 25%;
     margin: 5px;
-    transition: var(--color2) 250ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 a {
     text-decoration: none;
-}
-
-ul > li {
-    background-color: grey;
+    color: var(--bauhausWhite);
+    letter-spacing: 1px;
 }
 
 ul > li:hover {
-    background-color: rgb(90, 89, 89);
-    box-shadow: 1px 1px black;
     transform: scale(1.05);
+    text-shadow: 6px 0px 0px var(--bauhausBlue), -6px 0px 0px var(--bauhausRedBlur);
 }
 
-a {
+ li a:hover {
+    transform: scale(1.15);
     text-decoration: none;
+    color: var(--bauhausYellow)
 }
 
 body {
     height: 100%;
     margin: 0px;
     color: black;
-    background: linear-gradient(101deg, var(--color2) 20%, var(--color1));
+    background: linear-gradient(45deg, var(--bauhausWhite) 20%, var(--bauhausGrey));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    flex: 1 0 300px;
+    /*flex: 1 0 300px;*/
     flex-direction: column;
 }
 
@@ -117,11 +114,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid tomato;
 }
 
 #headshot {
-    border: 5px dotted black;
     max-width: 300px;
     margin: 1rem 3rem 3rem 1rem ;
 }
@@ -135,36 +130,43 @@ body {
 
 #description {
     display: block;
-    border: 2px solid tomato;
     align-items: baseline;
     width: 60%;
     padding: 20px;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 36px;
     margin: 2rem 0px 1rem 5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 
-/*----------------------------------------------*/
-
-#featured {/*DELETE ME AT FINISH*/
-    border: 5px solid pink;
+/*-----------------FEATURED PROJECTS-----------------------------*/
+.hrBauhaus1 {
+    width: 50%;
+    border: 3px solid var(--bauhausBlack);
+    color: var(--bauhausBlack);
 }
 
+.hrBauhaus2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    border: 3px solid var(--bauhausBlack);
+    color: var(--bauhausBlack);
+}
 
 .macroCard1 {
     display: flex;
     justify-content: center;
-    border: 5px solid pink;
 }
 
 .featuredCard1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid orange;
     padding: 20px;
     margin: 5px;
 }
@@ -183,6 +185,7 @@ h4 {
     width: 750px;
     font-size: 38px;
     border-radius: 30px;
+    border: 1px solid var(--bauhausBlack);
     transition: ease-in-out .2s;
     box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
     text-shadow: 6px 7px 8px black, 0 0 4px Black;
@@ -201,9 +204,10 @@ h4 {
 }
 
 .featuredimg:hover {
-    box-shadow: 30px -15px rgb(4, 165, 165);
+    box-shadow: -30px 30px 2px var(--bauhausBlue), 30px -30px 2px var(--bauhausYellow);
     transform: scale(1.005);
     text-shadow: none;
+    border: 9px solid var(--bauhausRed);
 }
 
 .featuredimg a:hover {
@@ -216,10 +220,7 @@ h4 {
     background-size: cover;
 }
 
-/*----------------------------------------------*/
-#projects {  /*DELETE ME AT FINISH*/
-    border: 5px solid green;
-}
+/*-------------------ALL PROJECTS---------------------------*/
 
 .macrocard2 {
     display: flex;
@@ -231,7 +232,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 3px solid crimson;
     padding: 20px;
     margin: 5px;
 
@@ -246,6 +246,7 @@ h4 {
     width: 450px;
     font-size: 38px;
     border-radius: 30px;
+    border: 1px solid var(--bauhausBlack);
     transition: ease-in-out .2s;
     box-shadow: 20px 10px 4px 2px rgba(19, 19, 61, 0.2);
     text-shadow: 6px 7px 8px black, 0 0 2px Black;
@@ -266,9 +267,10 @@ h4 {
 }
 
 .projectimg:hover {
-    box-shadow: 30px -15px rgb(133, 60, 175);
+    box-shadow: 30px -30px 2px var(--bauhausYellow), -30px 30px 2px var(--bauhausRed);
     transform: scale(1.005);
     text-shadow: none;
+    border: 6px solid var(--bauhausBlue);
 }
 
 .projectimg a:hover {
@@ -299,7 +301,7 @@ h4 {
     background-size: cover;
 }
 
-/*----------------------------------------------*/
+/*-----------------FOOTER-----------------------------*/
 
 footer {
     display: flex;
@@ -316,14 +318,14 @@ footer {
     height: 170px;
     width: 170px;
     border-radius: 85px;
-    background-color: chartreuse;
-    transition: ease-in-out .1s;
-    margin: 15px;
+    background-color: var(--bauhausYellow);
+    transition: ease-in-out .2s;
+    margin: 20px 30px 10px 30px;
 }
 
 .contactIcon:hover {
     transform: scale(1.15);
-    box-shadow: 10px -10px rgb(133, 60, 175), -4px 5px rgb(60, 87, 175, .5);
+    box-shadow: 10px -10px 2px var(--bauhausBlue), -10px 10px 2px var(--bauhausRedBlur);
 }
 
 #contact1 {
@@ -346,5 +348,3 @@ footer {
     background-size: 190px;
     background-position: center;
 }
-
-
