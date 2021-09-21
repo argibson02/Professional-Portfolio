@@ -418,4 +418,16 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    header h1 {
+        font-size: 90px;
+        padding: 0.5rem 0rem 0rem 1.5rem ;
+        }
+}
+
+@media screen and (max-width: 372px) {
+    #headshot img{
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
