@@ -2,18 +2,16 @@
 
 ## Description
 
-This is a description. 
+This is my first attempt at making a professional webpage to present my portfolio. It's simple, but it does what it needs to do. In it, I have a brief description of myself and my background, a featured project of mine, a list of other projects that I have done, and my contact information. 
 
-**Change notes:**
-- Changed many things
+~~ Cool Features! ~~
+* Links have RBY-color backgrounds that appear upon hover.
+* Elements will enlarge upon hover.
+* Smooth scrolling from navigation link jumps.
 
+GIF of webpage in action!
+![GIF of webpage in action!](https://github.com/argibson02/Professional-Portfolio/blob/main/images/portfolio-demo.gif?raw=true)
 
-![]()
-
-
-**Example of Changes**
-
-![]()
 
 *(Homework project #2 for the UC Berkeley Full-Stack Developer Bootcamp)*
 
@@ -56,4 +54,3 @@ Any modern internet browser will do!
 
 - Thanks to Jerome, Manuel, Cheng, and Daniel for instructing the UCB Coding Bootcamp.
 - Thank you CSS-Tricks for the [flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-- Thank you
