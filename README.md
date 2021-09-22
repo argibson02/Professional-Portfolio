@@ -56,3 +56,4 @@ Any modern internet browser will do!
 
 - Thanks to Jerome, Manuel, Cheng, and Daniel for instructing the UCB Coding Bootcamp.
 - Thank you CSS-Tricks for the [flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+- Thank you
