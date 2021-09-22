@@ -9,7 +9,8 @@ This is my first attempt at making a professional webpage to present my portfoli
 * Elements will enlarge upon hover.
 * Smooth scrolling from navigation link jumps.
 
-GIF of webpage in action!
+**GIF of webpage in action!**
+
 ![GIF of webpage in action!](https://github.com/argibson02/Professional-Portfolio/blob/main/images/portfolio-demo.gif?raw=true)
 
 
