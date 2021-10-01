@@ -14,7 +14,6 @@ This is my first attempt at making a professional webpage to present my portfoli
 ![GIF of webpage in action!](https://github.com/argibson02/Professional-Portfolio/blob/main/images/portfolio-demo.gif?raw=true)
 
 
-*(Homework project #2 for the UC Berkeley Full-Stack Developer Bootcamp)*
 
 ## Prerequisites
 Any modern internet browser will do!
